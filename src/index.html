@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="./script.js"></script>
 </head>
 
-<body class="bg-cover " style="background-image: url(/images/background-01.jpg);">
+<body class="bg-no-repeat max-h-full " style="background-image: url(../images/background-01.jpg); background-size: cover; background-position: center;">
     <!--
       Heads up! 👋
     
@@ -16,15 +17,15 @@
     -->
 
     <header class="bg-transparent">
-        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <div class="sm:items-center sm:justify-center">
-                    <img class="w-2/5" src="/images/logo- white transperent-02.png" alt="">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-8 lg:px-8">
+            <div class="sm:flex sm:items-center sm:justify-between ">
+                <div class="sm:items-center flex justify-center sm:justify-center">
+                    <img class="w-96 ss:w-[75%]" src="../images/logo- white transperent-02.png" alt="">
                 </div>
 
-                <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
+                <div class="mt-4 flex flex-col justify-center items-center gap-x-1 sm:mt-0 sm:flex-row sm:items-center">
                     <button
-                        class="block rounded-lg bg-yellow-500 px-5 py-3 w-auto text-sm font-medium text-black transition hover:bg-yellow-600 focus:outline-none focus:ring"
+                        class="block rounded-lg bg-yellow-500 px-5 py-3 w-28 text-sm font-medium text-black transition hover:bg-yellow-600 focus:outline-none focus:ring"
                         type="button">Join Us
                     </button>
 
@@ -32,7 +33,7 @@
                         class="inline-flex items-center justify-center gap-1.5 rounded-lg  bg-transparent px-5 py-3 text-white transition hover:text-slate-400 focus:outline-none focus:ring"
                         type="button">
                         <!-- <span class="text-sm font-medium"> Know More </span> -->
-                        <a href="https://gdsc.community.dev/school-of-information-technology-bhopal/">Know More</a>
+                        <a href="https://gdsc.community.dev/school-of-information-technology-bhopal/" class="w-28" >Know More</a>
 
                     </button>
                 </div>
@@ -40,29 +41,37 @@
         </div>
     </header>
 
-    <div class="flex justify-around my-7">
-        <div class="left max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-            <div class="text-white text-5xl my-5  font-semibold">
+    <div class="flex justify-around  ss:flex-col  ss:gap-y-3">
+        <div class="left w-[75%] ss:w-[100%]  ss:text-center  px-4 py-8 sm:px-6 sm:py-12 lg:pl-20 ">
+            <div class="text-white text-6xl ml:text-5xl ls:text-3xl my-5  font-semibold">
                 <span class="text-white">GDSC SOIT RGPV</span><br>
                 <span class="text-yellow-400">Learning Jam 23</span>
             </div>
-            <div class=" text-white text-xl border rounded-lg border-yellow-500 font-semibold p-3 my-5">
-                <span class="w-auto p-5">Date : Monday, 18th September</span><br>
-                <span class="w-auto p-5">Venue : RGPV Conference Hall, Bhopal</span>
+            <div class="w-[100%] ss:flex ss:justify-center ">
+            <div class=" text-white text-xl ls:w-[100%] ls:text-[100%] flex-col items-start gap-y-0 leading-none border rounded-lg w-96  border-yellow-500 font-semibold p-3 my-5">
+                <span class="text-start block">Date : Monday, 18th September</span><br>
+                <span class= "text-start block">Venue : RGPV Conference Hall, Bhopal</span>
             </div>
-            <div class="flex justify-start">
+          </div>
+            <div class="flex justify-start ss:justify-center">
                 <button
                     class="block rounded-lg bg-yellow-500 px-5 py-3 w-auto text-sm font-medium text-black transition hover:bg-transparent hover:text-yellow-500 hover:border hover:border-yellow-500 focus:outline-none focus:ring mr-7"
                     type="button">Book a Slot
                 </button>
                 <button
-                    class="block rounded-lg bg-transparent px-5 py-3 w-auto text-sm font-medium border border-yellow-500 text-yellow-500 transition hover:bg-yellow-500 hover:text-black focus:outline-none focus:ring mr-7 "
+                    class="block rounded-lg bg-transparent px-5 py-3 w-auto text-sm font-medium border border-yellow-500 text-yellow-500 transition hover:bg-yellow-500 hover:text-black focus:outline-none focus:ring mr-7 ls:mr-0 "
                     type="button">Learn More
                 </button>
             </div>
         </div>
 
-        <div class="right text-white"> insert countdown here
+        <div class="right flex ss:w-[100%] mb-3 text-white w-1/2 justify-center items-center "> 
+            <div class="container w-64 h-11 flex justify-evenly items-center">
+                <div id="days" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+                <div id="hours" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+                <div id="minutes" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+                <div id="seconds" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+            </div>
 
         </div>
     </div>
