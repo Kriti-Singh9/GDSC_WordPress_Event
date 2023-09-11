@@ -7,7 +7,7 @@ module.exports = {
         'ml':{'max':'856px'},
         'ss':{'max':'762px'},
         'ls':{'max':'414px'},
-        
+        'tab':'764px'
       }
     },
   },
