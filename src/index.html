@@ -8,7 +8,7 @@
     <script src="./script.js"></script>
 </head>
 
-<body class="bg-no-repeat max-h-full " style="background-image: url(../images/background-01.jpg); background-size: cover; background-position: center;">
+<body  style="background-image: url(../images/background-01.jpg); background-size: cover; background-repeat: no-repeat; ">
     <!--
       Heads up! 👋
     
@@ -17,7 +17,7 @@
     -->
 
     <header class="bg-transparent">
-        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-8 lg:px-8">
+        <div class="mx-auto max-h-full max-w-screen px-4 py-8 sm:px-6 sm:py-8 lg:px-8">
             <div class="sm:flex sm:items-center sm:justify-between ">
                 <div class="sm:items-center flex justify-center sm:justify-center">
                     <img class="w-96 ss:w-[75%]" src="../images/logo- white transperent-02.png" alt="">
@@ -42,7 +42,7 @@
     </header>
 
     <div class="flex justify-around  ss:flex-col  ss:gap-y-3">
-        <div class="left w-[75%] ss:w-[100%]  ss:text-center  px-4 py-8 sm:px-6 sm:py-12 lg:pl-20 ">
+        <div class="left w-[75%] ss:w-[100%]  ss:text-center  px-4 py-8 sm:px-6 sm:py-12 lg:pl-12 ">
             <div class="text-white text-6xl ml:text-5xl ls:text-3xl my-5  font-semibold">
                 <span class="text-white">GDSC SOIT RGPV</span><br>
                 <span class="text-yellow-400">Learning Jam 23</span>
@@ -75,7 +75,39 @@
 
         </div>
     </div>
-
+    
+    <div class="cards flex justify-evenly">
+        <div class="card card-compact w-80 border-solid border-2 border-red-400 bg-base-100 shadow-xl">
+            <figure><img src="../images/Adwani_Jii.png" class=" h-56" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p class=" text-red-400">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary bg-blue-600 text-red-500">Buy Now</button>
+              </div>
+            </div>
+        </div>
+        <div class="card card-compact w-80 border-solid border-2 border-red-400 bg-base-100 shadow-xl">
+            <figure><img src="../images/Kripesh.jpg" alt="Shoes" class="h-56" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p class=" text-red-400">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary bg-blue-600 text-red-500">Buy Now</button>
+              </div>
+            </div>
+        </div>
+        <div class="card card-compact w-80 border-solid border-2 border-red-400 bg-base-100 shadow-xl">
+            <figure><img src="../images/aditya.jpeg" alt="Shoes" class="h-56 w-[100%]" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p class=" text-red-400">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary bg-blue-600 text-red-500">Buy Now</button>
+              </div>
+            </div>
+        </div>
+    </div>
    </body>
 
 </html>
