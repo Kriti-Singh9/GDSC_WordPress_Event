@@ -1,0 +1,77 @@
+@media screen and (max-width: 589px) {
+    .poweredBy{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .imgresponsive{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+   
+    .imgresponsive img{
+        width: 50%;
+        height: 8rem;
+    }
+    .main-PoweredBy{
+        padding: 0;
+    }
+    .wordpress{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        /* padding-left: 6rem; */
+    }
+    .wordpress img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 18%;
+    }
+
+    
+}
+.left{
+    width: 50%;
+}
+
+.right{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width:900px){
+    .main-content-box{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right{
+        width: 100%;
+    }
+    .main-content-heading-box{
+        text-align: center;
+    }
+    .vanue{
+        display: flex;
+        justify-content: center;
+    }
+    .main-content-button-box{
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:326px) {
+    .wordpress-heading{
+        font-size:100%;
+    }
+}

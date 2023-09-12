@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/GDSC-Logo.png">
 </head>
@@ -43,19 +44,19 @@
         </div>
     </header>
 
-    <div class="flex justify-around  ss:flex-col  ss:gap-y-3">
-        <div class="left w-[75%] ss:w-[100%]  ss:text-center  px-4 py-8 sm:px-6 sm:py-12 lg:pl-12 ">
-            <div class="text-white text-6xl ml:text-5xl ls:text-3xl my-5  font-semibold">
+    <div class=" main-content-box flex justify-between w-[100%] ">
+        <div class="left w-[50%]   px-4 py-8 sm:px-6 sm:py-12 lg:pl-12 ">
+            <div class="text-white text-6xl ml:text-5xl main-content-heading-box ls:text-3xl my-5  font-semibold">
                 <span class="text-white">GDSC SOIT RGPV</span><br>
-                <span class="text-yellow-400">Learning Jam 23</span>
+                <span class="text-yellow-400">Learning Jam '23</span>
             </div>
-            <div class="w-[100%] ss:flex ss:justify-center ">
+            <div class="w-[100%] ss:flex ss:justify-center vanue">
             <div class=" text-white text-xl ls:w-[100%] ls:text-[100%] flex-col items-start gap-y-0 leading-none border rounded-lg w-96  border-yellow-500 font-semibold p-3 my-5">
                 <span class="text-start block">Date : Monday, 18th September</span><br>
                 <span class= "text-start block">Venue : RGPV Conference Hall, Bhopal</span>
             </div>
           </div>
-            <div class="flex tab:justify-start ss:justify-center">
+            <div class="flex tab:justify-start ss:justify-center main-content-button-box">
                 <button
                     class="block rounded-lg bg-yellow-500 px-5 py-3 w-auto text-sm font-medium text-black transition hover:bg-transparent hover:text-yellow-500 hover:border hover:border-yellow-500 focus:outline-none focus:ring mr-7"
                     type="button">Book a Slot
@@ -67,38 +68,39 @@
             </div>
         </div>
 
-        <div class="right flex ss:w-[100%] mb-3 text-white tab:w-1/2 justify-center items-center sm:justify-center"> 
-            <div class="container w-64 h-11 flex justify-evenly items-center tab:mr-12">
-                <div id="days" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
-                <div id="hours" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
-                <div id="minutes" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
-                <div id="seconds" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+        <div class="right flex-row ss:w-[100%] mb-3 text-white w-[50%] justify-center items-end sm:justify-center"> 
+            <div class="container h-11  flex justify-center gap-x-3 items-center tab:mr-12">
+                <div id="days" class=" bg-transparent border-yellow-200 border-solid border-2 w-14 h-14 text-2xl text-center shadow-yellow-200 shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+                <div id="hours" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 w-14 h-14 text-2xl shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+                <div id="minutes" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 w-14 h-14 text-2xl shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
+                <div id="seconds" class=" bg-transparent border-yellow-200 border-solid border-2 shadow-yellow-200 w-14 h-14 text-2xl shadow-sm hover:shadow-md transition px-3 py-2 rounded-md"></div>
             </div>
 
         </div>
     </div>
 
-    <div class="flex justify-start  ss:flex-col  ss:gap-y-3">
-      <div class="left w-[75%] ss:w-[100%]  ss:text-center  px-4 py-8 sm:px-6 sm:py-12 lg:pl-12 ">
-        <div class="w-[100%] ss:flex ss:justify-center p-10">
-          <div class=" text-white text-2xl ls:w-[100%] ls:text-[100%] flex-col items-start gap-y-0 font-semibold p-5 my-5">
+    
+
+        <div class="w-[100%] flex flex-col tab:p-10 main-poweredBy">
+          <div class=" text-white text-3xl px-12 ls:w-[100%] ls:text-[100%] flex-col items-start gap-y-0 font-semibold p-5 my-5">
               <span class="text-start block">Powered by</span>
           </div>
-          <div class="grid grid-cols-3 gap-1">
-            <div class="col-span-1 h-15">
-              <img class="img-responsive" src="/images/Untitled-1.png" alt="w">
+          <div class="grid grid-cols-3 px-9 poweredBy gap-1 ">
+            <div class="col-span-1 imgresponsive">
+              <img class="" src="/images/Untitled-1.png" alt="w">
             </div>
-            <div class="col-span-1 h-15">
-              <img class="img-responsive" src="/images/logo-1.png" alt="w">
+            <div class="col-span-1 imgresponsive">
+              <img class="" src="/images/logo-1.png" alt="w">
             </div>
-            <div class="col-span-1 h-15 pt-10">
-              <img class="img-responsive" src="/images/wordpress-logo.png" alt="w">
+            <div class="col-span-1 flex gap-y-2 flex-row h-15 items-center justify-center  wordpress">
+              <img  src="/images/wordpress-logo.png" alt="w">
+              <p class=" text-white font-semibold text-2xl ml-2 font-sans wordpress-heading">WordPress Bhopal</p>
             </div>
             
           </div>
         </div>
-      </div>
-    </div>
+      
+   
   
 
   <div class="flex justify-around  ss:flex-col  ss:gap-y-3">
