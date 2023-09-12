@@ -7,11 +7,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const hours = document.getElementById('hours')
     const minutes = document.getElementById('minutes')
     const seconds = document.getElementById('seconds')
+    const registerNow = document.getElementById('register-button')
+
+
+    registerNow.addEventListener('click', ()=>{
+      window.location.assign('https://gdsc.community.dev/events/details/developer-student-clubs-school-of-information-technology-bhopal-presents-gdsc-soit-learning-jam-23/')
+    })
 
     // let dayDifference = targetedDay-currentDay
     // let differenceHours = targetehours-currenthours
     // let differenceMinutes = targetedMinutes-currentMinutes
     // let differenceSeconds = targetedseconds-currentseconds
+
+
+    
 
     const timer=  setInterval(() => {
         calculateDifferrence()
@@ -20,8 +29,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function calculateDifferrence(){
         let targetedDate = new Date('Sep 18 2023, 13:00:00')
         let currentDate = new Date()
-        console.log(targetedDate.getDay(), targetedDate.getHours(), targetedDate.getMinutes(), targetedDate.getSeconds())
-        console.log(currentDate.getDay(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds())
+        // console.log(targetedDate.getDay(), targetedDate.getHours(), targetedDate.getMinutes(), targetedDate.getSeconds())
+        // console.log(currentDate.getDay(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds())
         let diff = targetedDate.getTime() - currentDate.getTime()
          let dayDifference = Math.floor(diff / (1000 * 60 * 60 * 24));
          let differenceHours =  Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
