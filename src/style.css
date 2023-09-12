@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
 @media screen and (max-width: 589px) {
     .poweredBy{
         display: flex;
@@ -73,5 +79,10 @@
 @media screen and (max-width:326px) {
     .wordpress-heading{
         font-size:100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .nav-right-section{
+        display: none;
     }
 }
